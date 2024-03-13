@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+var nums = [1,2,3,4,5,90,2,50,10,90];
+function Findsecond(){
+    var reduced = nums.filter((e,i)=>nums.indexOf(e) === i);
+    var sorted = reduced.sort(function(a, b){return a - b});
+    sorted.reverse()
+    return sorted[1]
+}
+console.log(Findsecond())
+</script>
+</html>
+<!--Made By Kris-->
